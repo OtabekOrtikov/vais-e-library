@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+
+  .container {
+    @extend %container;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 15px 0;
+
+    img {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 20px;
+    &--menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      li {
+        margin-right: 20px;
+
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

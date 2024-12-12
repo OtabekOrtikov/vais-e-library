@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Unilibrary.uz</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <img src="./assets/logo.png" alt="Logo" />
+          <a class="primary-btn" href="contacts.html">Contacts</a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav--menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./books.html">Books</a></li>
+            <li><a href="./artiles.html">Articles</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="slideshow">
+          <div class="slideshow__slide slideshow__slide--active">
+            <div class="slideshow__slide--number">1 / 3</div>
+            <img
+              src="./assets/hero-img-1.jpg"
+              class="slideshow__slide--image"
+            />
+          </div>
+
+          <div class="slideshow__slide">
+            <div class="slideshow__slide--number">2 / 3</div>
+            <img
+              src="./assets/hero-img-2.jpg"
+              class="slideshow__slide--image"
+            />
+          </div>
+
+          <div class="slideshow__slide">
+            <div class="slideshow__slide--number">3 / 3</div>
+            <img
+              src="./assets/hero-img-3.jpg"
+              class="slideshow__slide--image"
+            />
+          </div>
+
+          <div class="slideshow__control">
+            <a class="slideshow__control--prev" onclick="plusSlides(-1)">❮</a>
+            <a class="slideshow__control--next" onclick="plusSlides(1)">❯</a>
+          </div>
+          <div class="slideshow__dots">
+            <span
+              class="slideshow__dots--item"
+              onclick="currentSlide(1)"
+            ></span>
+            <span
+              class="slideshow__dots--item"
+              onclick="currentSlide(2)"
+            ></span>
+            <span
+              class="slideshow__dots--item"
+              onclick="currentSlide(3)"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="books">
+        <div class="container">
+          <h2 class="books__title">Books</h2>
+          <div class="books__content">
+            <div class="books__content--item">
+              <img src="./assets/book-1.jpg" alt="Book" />
+              <h3 class="books__content--item-title">Book Title</h3>
+              <p class="books__content--item-author">Author</p>
+              <a href="#" class="btn">Read</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", sans-serif;
+  a {
+    text-decoration: none;
+  }
+}
+
+.primary-btn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: $primary;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.container {
+  @extend %container;
+}

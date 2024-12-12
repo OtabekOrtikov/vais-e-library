@@ -1,0 +1,7 @@
+.books {
+    padding: 20px 0;
+    &__title {
+        font-size: 25px;
+        @extend %title;
+    }
+}
