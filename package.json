@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "node-sass --watch src/sass/main.scss src/css/main.css",
+    "lint": "stylelint src/sass/**/*.scss && eslint src/js/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +12,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "eslint": "^9.17.0",
+    "node-sass": "^9.0.0",
+    "stylelint": "^16.12.0"
   }
 }

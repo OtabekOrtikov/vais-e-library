@@ -37,6 +37,53 @@
         a {
           color: $primary;
         }
+
+        &.header__nav--menu-submenu {
+          position: relative;
+          text-decoration: underline;
+          ul {
+            position: absolute;
+            z-index: 99;
+            top: 100%;
+            left: 0;
+            transform-origin: top left;
+            transform: scale(0);
+            transition: all 0.3s;
+
+            li {
+              list-style-type: none;
+              a {
+                color: $primary;
+                background-color: #fff;
+                display: block;
+                width: 100%;
+                height: auto;
+                padding: 10px 20px;
+                transition: all 0.3s;
+              }
+              &:hover {
+                a {
+                  background-color: $primary;
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .icon {
+            position: absolute;
+            right: -10px;
+            transition: all 0.3s;
+          }
+          &:hover {
+            .icon {
+              position: absolute;
+              transform: rotate(180deg);
+            }
+            ul {
+              transform: scale(1);
+            }
+          }
+        }
       }
     }
   }
